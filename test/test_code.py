@@ -14,3 +14,7 @@ from src import code
 )
 def test_factorial(num, result):
     assert code.factorial(num) == result
+
+
+def test_fibonacci(n, f):
+    assert n == f
