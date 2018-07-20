@@ -26,5 +26,6 @@ def test_factorial(num, result):
         (4, 3),
         (5, 5)
     ]
+)
 def test_fibonacci(num, result):
     assert code.fibonacci(num) == result
