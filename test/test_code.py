@@ -16,5 +16,15 @@ def test_factorial(num, result):
     assert code.factorial(num) == result
 
 
-def test_fibonacci(n, f):
-    assert n == f
+@pytest.mark.parametrize(
+    'num,result',
+    [
+        (0, 0),
+        (1, 1),
+        (2, 1),
+        (3, 2),
+        (4, 3),
+        (5, 5)
+    ]
+def test_fibonacci(num, result):
+    assert code.fibonacci(num) == result
